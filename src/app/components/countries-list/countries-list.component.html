@@ -1,0 +1,13 @@
+
+<h3>Countries List</h3>
+
+<table>
+  <tr>
+    <th>Country</th>
+  </tr>
+  <tr (click)="getCountry(country.name)" *ngFor="let country of countries">
+    <td>{{country.name}}</td>
+  </tr>
+
+</table>
+

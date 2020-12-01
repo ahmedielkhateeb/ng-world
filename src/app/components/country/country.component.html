@@ -1,0 +1,11 @@
+<h3>Country details</h3>
+<p *ngIf="!countriesService.country">
+  Select country to view its details
+</p>
+<div *ngIf="countriesService.country">
+  <p> Country name: {{this.countriesService.country.name}} </p>
+  <p> Country continent: {{this.countriesService.country.continent}} </p>
+  <p> Country population: {{this.countriesService.country.population}} </p>
+  <p> Country lifeExpectancy: {{this.countriesService.country.lifeExpectancy}} </p>
+  <p> Country language: {{this.countriesService.country.language}} </p>
+</div>
